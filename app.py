@@ -45,7 +45,7 @@ if start_button:
     st.write(f'Running the experiment of {number_of_trials} trials.')
     st.session_state['experiment_no'] += 1
     final_mean = toss_coin(number_of_trials)
-    
+
     # Add new results to the DataFrame
     st.session_state['df_experiment_results'] = pd.concat([
         st.session_state['df_experiment_results'],
